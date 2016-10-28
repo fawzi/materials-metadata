@@ -1,0 +1,16 @@
+NoMaD metadata,type,CIF tag,type,comments
+atom_label,unicode string,_atom_site_label,char,
+atom_position,float,"_tcod_atom_site_initial_fract_[xyz]_
+_atoms_site_fract_[xyz]
+_atom_site_Cartn_[xyz]",numb,"M.F.: NOMAD uses Cartesian coordinates; units are SI by default (i.e. meters), except when explicitly specified."
+basis_set_plan_wave_cutoff,float,_dft_kinetic_energy_cutoff_wavefunctions,numb,"NoMaD in J, CIF in eV"
+configuration_periodic_dimensions,boolean,_dft_cell_periodic_BC_[XYZ],char,
+simulation_cell,float,_cell_length_[abc],numb,needs conversion
+simulation_cell,float,"_cell_angle_[alpha,beta,gamma]",numb,needs conversion
+program_compilation_datetime,float,_tcod_software_package_compilation_timestamp,char,"NoMaD in Unix timestamp, CIF in ISO 8601"
+program_name,unicode string,_tcod_software_package,char,
+program_version,unicode string,_tcod_software_package_version,char,
+atom_forces,float,_tcod_atom_site_resid_force_Cartn_[xyz],numb,"NoMaD in N, CIF in eV/A; not clear whether NoMaD uses fractional or Cartesian system"
+energy_total,float,_tcod_total_energy,numb,"NoMaD gives per-atom in J, CIF gives total in eV"
+source_references,unicode string,_tcod_source_*,char,NoMaD seems to give a free-text field to identify the source of data
+time_calculation,float,_tcod_computation_wallclock_time,numb,
